@@ -1,0 +1,33 @@
+.cont {
+  margin-top: 350px;
+  margin-bottom: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+  justify-content: center;
+  div {
+    padding: 50px;    
+    display: flex;
+    width:30%;
+    border: 1px solid rgba(132, 132, 132, 0.173);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.326);
+    .icon {
+      margin-left: 15px;
+      .fas {
+        font-size: 1.5em;
+      }
+    
+      &.completed {
+        .fa-check {
+          color: green;
+        }
+      }
+    
+      &.not-completed {
+        .fa-times {
+          color: red;
+        }
+      }
+    }
+  }
+}

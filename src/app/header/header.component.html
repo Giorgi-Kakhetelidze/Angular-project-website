@@ -1,0 +1,9 @@
+<header>
+  <div class="header-left">
+    <button class="hamburger-menu" (click)="toggleNavigation()">☰</button>
+    <a routerLink="/users">PostPlus</a>
+  </div>
+  <div class="header-right">
+    {{ currentDate | date : "short" }}
+  </div>
+</header>

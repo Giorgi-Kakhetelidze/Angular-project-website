@@ -1,0 +1,96 @@
+.container {
+  margin-top: 320px;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  div {
+    width: 27%;
+    border: 1px solid rgba(132, 132, 132, 0.173);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.326);
+    padding: 40px;
+    text-align: center;
+    h3 {
+      text-align: center;
+      font-size: 1.5em;
+      margin-bottom: 57px;
+    }
+
+    p {
+      font-size: 1em;
+      line-height: 30px;
+    }
+    button {
+      background: none;
+      border: 2px solid #000;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      min-width: 200px;
+      margin-top: 30px;
+      color: white;
+      background-color: black;
+      cursor: pointer;
+      transition: 0.4s;
+      position: relative;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 15px;
+      &:hover {
+        font-weight: bold;
+        color: black;
+        background-color: white;
+      }
+    }
+  }
+}
+
+@media (max-width: 1124px) {
+  .container{
+
+    div {
+      width: 40%;
+    }
+  }
+}
+@media (max-width: 800px) {
+  .container{
+
+    div {
+      width: 80%;
+    }
+  }
+}
+@media (max-width: 450px) {
+  .container{
+    
+    div {
+      width: 98%;
+      padding: 10px;
+      text-align: center;
+      h3{
+        font-size: 1em;
+      }
+      p {
+        font-size: 0.8em;
+      }
+      button {
+        min-width: 100px;
+      }
+    }
+  }
+}
+
+@media (max-width: 250px){
+  .container{
+    width: 100%;
+    div{
+      width: 100%;
+      button {
+        min-width: 50px;
+        font-size: 0.7em;
+      }
+    }
+  }
+}

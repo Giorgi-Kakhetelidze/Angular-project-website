@@ -1,0 +1,32 @@
+<div>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>Company</th>
+        <th>Posts</th>
+        <th>Todo-list</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <td data-title="Name">{{ user.name }}</td>
+        <td data-title="Phone">{{ user.phone }}</td>
+        <td data-title="Email">{{ user.email }}</td>
+        <td data-title="Company">{{ user.company.name }}</td>
+        <td data-title="Posts">
+          <button class="btn" [routerLink]="['/user', user.id, 'posts']" routerLinkActive="active">
+            Posts
+          </button>
+        </td>
+        <td data-title="Todo-list">
+          <button class="btn" [routerLink]="['/todoList', user.id, 'todos']" routerLinkActive="active">
+            todo list
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,9 @@
+<div class="container">
+  <div *ngFor="let post of posts">
+    <h3>{{ post.title }}</h3>
+    <p>{{ post.body }}</p>
+
+    <button [routerLink]="['/detail', userId, 'post', post.id]" routerLinkActive="active">დეტალურად</button>
+  </div>
+</div>
+

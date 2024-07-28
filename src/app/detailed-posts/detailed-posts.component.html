@@ -1,0 +1,17 @@
+<div class="con">
+  <div class="container">
+    <div *ngIf="post" class="postInfo">
+      <h1>Detailed Information</h1>
+      <h3>{{ post.title }}</h3>
+      <p class="post-text">{{ post.body }}</p>
+    </div>
+    <div *ngIf="userInfo" class="userInfo">
+      <h1>User information</h1>
+      <h2>{{ userInfo.name }}</h2>
+      <p>Email: {{ userInfo.email }}</p>
+      <p>Phone: {{ userInfo.phone }}</p>
+      <p>Company: {{ userInfo.company.name }}</p>
+    </div>
+  </div>
+</div>
+

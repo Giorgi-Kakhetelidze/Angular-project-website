@@ -1,0 +1,9 @@
+<div class="cont">
+  <div *ngFor="let todo of todos">
+    <h3>{{ todo.title }}</h3>
+    <span class="icon" [ngClass]="{'completed': todo.completed, 'not-completed': !todo.completed}">
+      <i *ngIf="todo.completed" class="fas fa-check"></i>
+      <i *ngIf="!todo.completed" class="fas fa-times"></i>
+    </span>
+  </div>
+</div>
